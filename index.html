@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¿Por qué nuestras notas se llaman Do Re Mi y no A B C? | Musicala</title>
+
+    <!-- =============  ESTILOS  ============= -->
+    <style>
+        :root {
+            --brand-blue: #007BFF;
+            --brand-blue-dark: #0056b3;
+            --brand-purple: #7A5CFA;
+            --gray-light: #f2f2f2;
+            --gray-dark: #555555;
+            --text-main: #333333;
+            --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        /* ----------  GLOBAL ---------- */
+        * { box-sizing: border-box; scroll-behavior: smooth; }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, var(--gray-light) 0%, #e9e9ff 100%);
+            font-family: "Roboto", Arial, sans-serif;
+            font-size: 18px; /* más grande */
+            color: var(--text-main);
+        }
+
+        /* ----------  LOGO FIJO ---------- */
+        .logo-fixed {
+            position: fixed;
+            top: 12px;
+            left: 12px;
+            width: 140px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+        }
+        .logo-fixed:hover { transform: scale(1.08) rotate(-4deg); }
+
+        /* ----------  CONTENEDOR ---------- */
+        .container {
+            position: relative;
+            max-width: 1000px; /* más ancho */
+            margin: 80px auto 60px;
+            padding: 50px 40px 70px;
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: var(--shadow-sm);
+            animation: fadeInUp 0.8s ease-out both;
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ----------  TIPOGRAFÍA ---------- */
+        h1 {
+            font-size: 3rem; /* 48px */
+            margin: 0 0 20px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2rem; /* 32px */
+            margin: 46px 0 16px;
+            color: var(--brand-purple);
+        }
+        p, li { line-height: 1.65; color: var(--gray-dark); }
+
+        /* ----------  ENLACES ---------- */
+        a {
+            color: var(--brand-blue);
+            text-decoration: none;
+            position: relative;
+        }
+        a::after {
+            content: "";
+            position: absolute;
+            left: 0; bottom: -3px;
+            width: 0%; height: 3px;
+            background: var(--brand-blue);
+            transition: width 0.3s ease;
+        }
+        a:hover::after { width: 100%; }
+
+        /* ----------  TABLA ---------- */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+        th, td { padding: 14px 12px; text-align: center; }
+        th { background: var(--gray-light); font-weight: 600; }
+        tr:nth-child(even) { background: #fafafa; }
+        tr:hover { background: #f0f8ff; transform: scale(1.01); transition: 0.2s; }
+
+        /* ----------  LISTA CURIOSIDADES ---------- */
+        ul { padding-left: 20px; }
+        ul li { margin-bottom: 10px; position: relative; padding-left: 26px; }
+        ul li::before {
+            content: "🎵";
+            position: absolute;
+            left: 0; top: 0;
+        }
+
+        /* ----------  COPYRIGHT ---------- */
+        .copyright {
+            font-size: 0.9rem;
+            color: #888888;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        /* ----------  RESPONSIVE ---------- */
+        @media (max-width: 680px) {
+            .container { margin: 120px 16px 40px; padding: 40px 20px 60px; }
+            h1 { font-size: 2.3rem; }
+            h2 { font-size: 1.5rem; }
+            .logo-fixed { width: 110px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- LOGO EN LA ESQUINA -->
+    <img class="logo-fixed" src="https://static.wixstatic.com/media/85afce_3adb3865c88a492b93a8bf2dc69049c3~mv2.png" alt="Logo Musicala" />
+
+    <main class="container">
+        <!-- TÍTULO -->
+        <h1>¿Por qué nuestras notas se llaman Do&nbsp;Re&nbsp;Mi y no A&nbsp;B&nbsp;C?</h1>
+
+        <!-- INTRO -->
+        <p>Seguro has visto cientos de tutoriales en YouTube que dicen: «Play a C chord» o «This song is in A minor». Pero en las clases de música en Colombia casi siempre escuchas <strong>Do, Re, Mi, Fa, Sol, La, Si</strong>. ¿Por qué usamos nombres diferentes? 🌎🎶 La respuesta nos lleva a la Edad Media, a un himno dedicado a San Juan Bautista y a la expansión cultural de la Iglesia.</p>
+
+        <!-- ORIGEN -->
+        <h2>Un himno medieval que lo empezó todo</h2>
+        <p>En el siglo&nbsp;XI, el monje <strong>Guido&nbsp;d’Arezzo</strong> buscaba facilitar el aprendizaje del canto coral. Descubrió que cada verso del himno <em>«Ut queant laxis»</em> comenzaba una nota más alta que el anterior. Tomó las primeras sílabas de cada línea y nació el sistema: <em>Ut – Re – Mi – Fa – Sol – La</em>.</p>
+        <p>Escúchalo aquí 👉 <a href="https://www.youtube.com/watch?v=9VSnDGfozJ0&list=RD9VSnDGfozJ0&start_radio=1" target="_blank" rel="noopener">Ut queant laxis en YouTube</a></p>
+
+        <!-- CAMBIO A DO -->
+        <h2>¿Y el Do? Adiós a Ut</h2>
+        <p>En el siglo&nbsp;XVII, el teórico italiano <strong>Giovanni Battista Doni</strong> propuso cambiar «Ut» por <strong>«Do»</strong>, porque era más fácil de cantar. ¿Coincidencia que su apellido empezara con Do? Tal vez. Otra teoría sugiere que «Do» proviene de <em>Domine</em> (Señor, en latín) 🙏.</p>
+
+        <!-- EXPANSIÓN -->
+        <h2>Del monasterio a Latinoamérica</h2>
+        <p>Durante la colonización, la Iglesia Católica difundió esta forma de nombrar las notas. Los maestros de capilla enseñaban con el sistema <strong>Do Re Mi</strong> en catedrales y colegios. Así se arraigó en nuestro continente, mientras que en los países angloparlantes prosperaba un sistema basado en letras.</p>
+
+        <!-- TABLA -->
+        <h2>Dos nombres, un mismo sonido</h2>
+        <p>Aquí tienes la equivalencia para no perderte entre partituras y tutoriales:</p>
+        <table>
+            <thead>
+                <tr><th>Latino</th><th>Anglo</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Do</td><td>C</td></tr>
+                <tr><td>Re</td><td>D</td></tr>
+                <tr><td>Mi</td><td>E</td></tr>
+                <tr><td>Fa</td><td>F</td></tr>
+                <tr><td>Sol</td><td>G</td></tr>
+                <tr><td>La</td><td>A</td></tr>
+                <tr><td>Si</td><td>B</td></tr>
+            </tbody>
+        </table>
+
+        <!-- CURIOSIDADES -->
+        <h2>Datos curiosos para presumir en clase</h2>
+        <ul>
+            <li>En la pedagogía Kodály se usa «Ti» en lugar de «Si» para evitar confusiones con «Sol».</li>
+            <li>En Alemania, la nota B natural se llama <strong>H</strong> y Bb se llama <strong>B</strong>.</li>
+            <li>En la música india, las notas son Sa, Re, Ga, Ma, Pa, Dha y Ni.</li>
+            <li>El Do estándar tiene una frecuencia de 261.63 Hz en la cuarta octava (C4).</li>
+            <li>La nota La (A4) = 440 Hz es referencia internacional para afinar orquestas.</li>
+        </ul>
+
+        <!-- COPYRIGHT -->
+        <p class="copyright">© 2025 Musicala. Todos los derechos reservados.</p>
+    </main>
+</body>
+</html>
